@@ -24,8 +24,15 @@
         <th>
             <td>Long URL</td>
             <td>Short Form</td>
+            <td>Date</td>
         </th>
-        
+        {% for element in Container %}
+        <tr>
+            <td>{{element.long}}</td>
+            <td>{{element.short}}</td>
+            <td>{{element.date}}</td>
+        </tr>
+        {% endfor %}
     </table>
     
 </body>
